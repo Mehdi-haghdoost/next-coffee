@@ -1,8 +1,38 @@
+import ServiceItem from '@/components/modules/ServiceItem/ServiceItem'
 import React from 'react'
 
 function Services() {
   return (
-    <div>Services</div>
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="section-title">
+          <h4 class="text-primary text-uppercase" style={{letterSpacing: '5px'}} >Our Services</h4>
+          <h1 class="display-4">Fresh & Organic Beans</h1>
+        </div>
+        <div class="row">
+         <ServiceItem title='Fastest Door Delivery'
+         desc='Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor'
+         image={'/images/service-1.jpg'}
+         icon=''
+         />
+          <ServiceItem title='Fresh Coffee Beans'
+         desc='Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor'
+         image={'/images/service-1.jpg'}
+         icon=''
+         />
+          <ServiceItem title='Best Quality Coffee'
+         desc='Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor'
+         image={'/images/service-1.jpg'}
+         icon=''
+         />
+          <ServiceItem title='Online Table Booking'
+         desc='Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor'
+         image={'/images/service-1.jpg'}
+         icon=''
+         />
+        </div>
+      </div>
+    </div>
   )
 }
 
