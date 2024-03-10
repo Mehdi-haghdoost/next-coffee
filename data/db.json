@@ -31,6 +31,20 @@
             "desc": "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor",
             "img": "/images/service-2.jpg",
             "icon": "faCoffee"
+        },
+        {
+            "id": 3,
+            "title": "Best Quality Coffee",
+            "desc": "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor",
+            "img": "/images/service-3.jpg",
+            "icon": "faAward"
+        },
+        {
+            "id": 4,
+            "title": "Online Table Booking",
+            "desc": "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor",
+            "img": "/images/service-4.jpg",
+            "icon": "faTable"
         }
     ],
     "newsLetters": [
