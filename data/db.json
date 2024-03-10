@@ -1,0 +1,62 @@
+{
+    "menu": [
+        {
+            "id": 1,
+            "title": "Black Coffee",
+            "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
+            "img": "/images/menu-1.jpg",
+            "price": 5,
+            "off": 0
+        },
+        {
+            "id": 2,
+            "title": "Chocolete Coffee",
+            "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
+            "img": "/images/menu-2.jpg",
+            "price": 7,
+            "off": 0
+        }
+    ],
+    "services": [
+        {
+            "id": 1,
+            "title": "Fastest Door Delivery",
+            "desc": "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor",
+            "img": "/images/service-1.jpg",
+            "icon": "faTruck"
+        },
+        {
+            "id": 2,
+            "title": "Fresh Coffee Beans",
+            "desc": "Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor",
+            "img": "/images/service-2.jpg",
+            "icon": "faCoffee"
+        }
+    ],
+    "newsLetters": [
+        {
+            "id": 1,
+            "email": "mahdi.leo2014@gmail.com"
+        },
+        {
+            "id": 2,
+            "email": "naser22@gmail.com"
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "username": "mehdi_haghdoost",
+            "body": "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita",
+            "productID": 1,
+            "score": 5
+        },
+        {
+            "id": 2,
+            "username": "naser_khalili",
+            "body": "Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr eirmod clita lorem. Dolor tempor ipsum sanct clita",
+            "productID": 2,
+            "score": 4.5
+        }
+    ]
+}
