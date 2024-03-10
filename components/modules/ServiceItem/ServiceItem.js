@@ -5,7 +5,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import * as Icons from "@fortawesome/free-solid-svg-icons";
 
 function ServiceItem({ title, desc, image, icon }) {
   return (
@@ -20,7 +20,7 @@ function ServiceItem({ title, desc, image, icon }) {
             alignItems : 'baseline'
           }}>
             <div className={styles.service_icon}>
-              <FontAwesomeIcon icon={icon} style={{fontSize  : '18px'}} />
+              <FontAwesomeIcon icon={Icons[icon]} style={{fontSize  : '18px'}} />
             </div>
             <p>
               {title}
