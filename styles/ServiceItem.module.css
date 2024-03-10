@@ -1,0 +1,10 @@
+.service_icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #da9f5b;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}

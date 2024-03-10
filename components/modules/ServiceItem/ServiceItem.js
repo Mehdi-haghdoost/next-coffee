@@ -1,4 +1,11 @@
 import React from 'react'
+import styles from '@/styles/ServiceItem.module.css'
+
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 function ServiceItem({ title, desc, image, icon }) {
   return (
@@ -8,7 +15,18 @@ function ServiceItem({ title, desc, image, icon }) {
           <img class="img-fluid mb-3 mb-sm-0" src={image} alt="" />
         </div>
         <div class="col-sm-7">
-          <h4><i class="fa fa-truck service-icon"></i>{title}</h4>
+          <h4 style={{
+            display :'flex',
+            alignItems : 'baseline'
+          }}>
+            <div className={styles.service_icon}>
+              <FontAwesomeIcon icon={icon} style={{fontSize  : '18px'}} />
+            </div>
+            <p>
+              {title}
+            </p>
+
+          </h4>
           <p class="m-0">{desc}</p>
         </div>
       </div>

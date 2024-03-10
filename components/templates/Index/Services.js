@@ -1,6 +1,6 @@
-import ServiceItem from '@/components/modules/ServiceItem/ServiceItem'
 import React from 'react'
-
+import ServiceItem from '@/components/modules/ServiceItem/ServiceItem'
+import {  faAward, faCoffee, faTable, faTruck } from "@fortawesome/free-solid-svg-icons";
 function Services() {
   return (
     <div class="container-fluid pt-5">
@@ -13,22 +13,22 @@ function Services() {
          <ServiceItem title='Fastest Door Delivery'
          desc='Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor'
          image={'/images/service-1.jpg'}
-         icon=''
+         icon={faTruck}
          />
           <ServiceItem title='Fresh Coffee Beans'
          desc='Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor'
          image={'/images/service-1.jpg'}
-         icon=''
+         icon={faCoffee}
          />
           <ServiceItem title='Best Quality Coffee'
          desc='Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor'
          image={'/images/service-1.jpg'}
-         icon=''
+         icon={faAward}
          />
           <ServiceItem title='Online Table Booking'
          desc='Sit lorem ipsum et diam elitr est dolor sed duo. Guberg sea et et lorem dolor sed est sit invidunt, dolore tempor diam ipsum takima erat tempor'
          image={'/images/service-1.jpg'}
-         icon=''
+         icon={faTable}
          />
         </div>
       </div>
