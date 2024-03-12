@@ -1,7 +1,13 @@
 import React from 'react'
 import styles from '@/styles/Navbar.module.css'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+
 
 function Navbar() {
+
+  const route = useRouter()
+
   return (
     <div class={`container-fluid p-0 ${styles.nav_bar}`}>
       <nav
@@ -23,21 +29,19 @@ function Navbar() {
           id="navbarCollapse"
         >
           <div class={`${styles.navbar_nav} ml-auto p-4`}>
-            <a
-              href="index.html"
-              class={`${styles.nav_link} ${styles.active_nav_link}`}
-            >
+
+            <Link href='/' class={`${styles.nav_link} ${route.pathname == '/' ? `${styles.active_nav_link}` : ''} `}>
               Home
-            </a>
-            <a href="about.html" class={`${styles.nav_link}`}>
+            </Link>
+            <Link href='/about' class={`${styles.nav_link} ${route.pathname == '/about' ? `${styles.active_nav_link}` : ''} `}>
               About
-            </a>
-            <a href="service.html" class={`${styles.nav_link}`}>
+            </Link>
+            <Link href="/services" class={`${styles.nav_link} ${route.pathname == '/services' ? `${styles.active_nav_link}` : ''} `}>
               Service
-            </a>
-            <a href="menu.html" class={`${styles.nav_link}`}>
+            </Link>
+            <Link href="/menu" class={`${styles.nav_link} ${route.pathname == '/menu' ? `${styles.active_nav_link}` : ''} `}>
               Menu
-            </a>
+            </Link>
             <div class={`${styles.dropdown}`}>
               <a
                 href="#"
@@ -55,9 +59,9 @@ function Navbar() {
                 </a>
               </div>
             </div>
-            <a href="contact.html" class={`${styles.nav_link}`}>
+            <Link href="/contact" class={`${styles.nav_link} ${route.pathname == '/contact' ? `${styles.active_nav_link}` : ''} `}>
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
