@@ -1,8 +1,9 @@
+import PageHeader from '@/components/modules/PageHeader/PageHeader'
 import React from 'react'
 
 function Services() {
   return (
-    <h1>Services Page</h1>
+    <PageHeader />
   )
 }
 
