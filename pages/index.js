@@ -9,6 +9,7 @@ import Testimonials from '@/components/templates/Index/Testimonials'
 
 
 function Home({ data }) {
+console.log(data);
   return (
     <>
       <Slider />
