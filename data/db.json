@@ -15,7 +15,7 @@
       "title": "Hot Chocolete",
       "price": 4,
       "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
-      "score": 4.4,
+      "score": 3.6,
       "off": 0,
       "type": "hot",
       "img": "/images/menu-2.jpg"
@@ -25,7 +25,7 @@
       "title": "Ice Cream",
       "price": 6,
       "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
-      "score": 4.9,
+      "score": 2.1,
       "off": 0,
       "type": "cold",
       "img": "/images/menu-3.jpg"
@@ -45,7 +45,7 @@
       "title": "Chocolate Milk",
       "price": 4,
       "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
-      "score": 4.8,
+      "score": 4.3,
       "off": 50,
       "type": "hot",
       "img": "/images/menu-5.jpeg"
@@ -55,7 +55,7 @@
       "title": "Banana Milk",
       "price": 12,
       "desc": "Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor",
-      "score": 4.9,
+      "score": 3.6,
       "off": 0,
       "type": "cold",
       "img": "/images/menu-6.jpeg"
