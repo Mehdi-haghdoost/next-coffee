@@ -2,13 +2,13 @@ import ProductsDetails from '@/components/templates/Product/ProductDetails'
 import Comments from '@/components/templates/Product/Comments'
 import React from 'react'
 
-function Product({ product }) {
+function Product({ product,comments }) {
 
 
   return (
     <>
       <ProductsDetails data={product} />
-      <Comments />
+      <Comments data={comments} />
     </>
   )
 }
@@ -28,12 +28,25 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const { params } = context
-  const res = await fetch(`http://localhost:4000/menu/${params.id}`)
-  const product = await res.json()
-  console.log('product =>', product);
+
+  const productResponse = await fetch(`http://localhost:4000/menu/${params.id}`)
+  const productData = await productResponse.json()
+
+  const commentsResponse = await fetch('http://localhost:4000/comments')
+  const comments = await commentsResponse.json()
+
+  const productComments = comments.filter(comment => comment.productID === +(productData.id))
+
+  console.log('comments =>' , comments);
+  console.log('productData =>', productData);
+  console.log('productComments =>',productComments);
+
+
+
   return {
     props: {
-      product,
+      product : productData,
+      comments : productComments,
     },
   }
 }
